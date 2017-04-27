@@ -3,22 +3,31 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/box"
+        android:scaleType="centerCrop"/>
+
     <TextView
+        android:id="@+id/textView_allRound_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="All Round - Points"
+        android:textAllCaps="true"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
         android:id="@+id/layout_boxers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center_horizontal"
-        android:paddingTop="16dp"
-        android:text="All Round - Points"
-        android:textAllCaps="true"
-        android:textColor="#000000"
-        android:textSize="14sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_boxers"
+        android:layout_below="@+id/textView_allRound_point"
         android:orientation="horizontal">
 
 
@@ -29,24 +38,29 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:paddingTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
                 android:text="Boxer 1"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
+                android:id="@+id/boxer_1_score"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
-                android:paddingTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp"
+                android:background="#8a45ad"
+                android:textColor="#ffffff"
                 android:text="0"
                 android:textAllCaps="true"
                 android:textSize="56sp" />
@@ -56,7 +70,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="threepointsA"
+                android:onClick="tenNine1"
                 android:paddingBottom="8dp"
                 android:text="10 - 9"
                 android:textColor="#000000" />
@@ -66,7 +80,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="twopointsA"
+                android:onClick="foul1"
                 android:text="Foul"
                 android:textColor="#000000" />
 
@@ -75,7 +89,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freethrowA"
+                android:onClick="Knockdown1"
                 android:paddingTop="8dp"
                 android:text="Knockdown"
                 android:textColor="#000000" />
@@ -85,11 +99,10 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freethrowA"
+                android:onClick="Knockout1"
                 android:paddingTop="8dp"
                 android:text="Knockout"
                 android:textColor="#000000" />
-
 
         </LinearLayout>
 
@@ -105,24 +118,29 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:paddingTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
                 android:text="Boxer 2"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="14sp" />
+                android:background="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
+                android:id="@+id/boxer_2_score"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
-                android:paddingTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp"
+                android:background="#8a45ad"
+                android:textColor="#ffffff"
                 android:text="0"
                 android:textAllCaps="true"
                 android:textSize="56sp" />
@@ -132,7 +150,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="threepointsB"
+                android:onClick="tenNine2"
                 android:paddingBottom="8dp"
                 android:text="10 - 9"
                 android:textColor="#000000" />
@@ -142,7 +160,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="twopointsB"
+                android:onClick="foul2"
                 android:text="Foul"
                 android:textColor="#000000" />
 
@@ -151,7 +169,7 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freethrowB"
+                android:onClick="Knockdown2"
                 android:paddingTop="8dp"
                 android:text="Knockdown"
                 android:textColor="#000000" />
@@ -161,13 +179,28 @@
                 android:layout_height="48dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freethrowB"
+                android:onClick="Knockout2"
                 android:paddingTop="8dp"
                 android:text="Knockout"
                 android:textColor="#000000" />
 
         </LinearLayout>
+
+
+
     </LinearLayout>
+
+    <Button
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="equalPoints"
+        android:layout_below="@+id/layout_boxers"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:text="Draw"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textview_Declare"
@@ -175,12 +208,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/layout_declare"
         android:fontFamily="sans-serif-medium"
-        android:paddingLeft="24dp"
         android:text="Declare"
         android:textAlignment="center"
         android:textAllCaps="true"
+        android:background="#ffffff"
         android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:id="@+id/layout_declare"
@@ -191,23 +225,24 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_draw"
+            android:id="@+id/button_match_draw"
             android:layout_width="157dp"
             android:layout_height="48dp"
-            android:layout_above="@+id/image_holder"
+            android:layout_weight="1"
             android:layout_marginLeft="24dp"
-            android:onClick="freethrowB"
-            android:text="Draw"
+            android:layout_marginRight="8dp"
+            android:onClick="matchDraw"
+            android:text="Match Draw"
             android:textColor="#000000" />
 
         <Button
             android:id="@+id/button_no_context"
             android:layout_width="157dp"
             android:layout_height="48dp"
-            android:layout_below="@+id/button_draw"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="50dp"
-            android:onClick="freethrowB"
+            android:layout_weight="1"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="noContest"
             android:text="No Contest"
             android:textColor="#000000" />
 
@@ -219,7 +254,7 @@
         android:layout_height="48dp"
         android:layout_above="@+id/textview_status"
         android:layout_centerHorizontal="true"
-        android:onClick="reset"
+        android:onClick="endGame"
         android:text="End Game"
         android:textColor="#000000" />
 
@@ -233,6 +268,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#616161"
+        android:background="#ffffff"
         android:textSize="14sp" />
 
 </RelativeLayout>
