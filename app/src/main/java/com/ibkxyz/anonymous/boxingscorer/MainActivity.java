@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
     public void tenNine1(View view) {
         boxer1 = boxer1 + 10;
         boxer2 = boxer2 + 9;
+        displayWinner("");
         displayForBoxer1(boxer1);
         displayForBoxer2(boxer2);
     }
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void foul1(View view) {
         boxer1 = boxer1 - 1;
+        displayWinner("");
         displayForBoxer1(boxer1);
     }
 
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Knockdown1(View view) {
         boxer1 = boxer1 - 1;
+        displayWinner("");
         displayForBoxer1(boxer1);
     }
 
@@ -110,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
     public void tenNine2(View view) {
         boxer1 = boxer1 + 9;
         boxer2 = boxer2 + 10;
+        displayWinner("");
         displayForBoxer1(boxer1);
         displayForBoxer2(boxer2);
     }
@@ -121,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void foul2(View view) {
         boxer2 = boxer2 - 1;
+        displayWinner("");
         displayForBoxer2(boxer2);
     }
 
@@ -131,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Knockdown2(View view) {
         boxer2 = boxer2 - 1;
+        displayWinner("");
         displayForBoxer2(boxer2);
     }
 
@@ -155,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
     public void equalPoints(View view) {
         boxer1 = boxer1 + 10;
         boxer2 = boxer2 + 10;
+        displayWinner("");
         displayForBoxer1(boxer1);
         displayForBoxer2(boxer2);
     }

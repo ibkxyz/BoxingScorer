@@ -7,19 +7,19 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/box"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/boxer" />
 
     <TextView
         android:id="@+id/textView_allRound_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:fontFamily="sans-serif-medium"
         android:text="All Round - Points"
         android:textAllCaps="true"
-        android:background="#ffffff"
         android:textColor="#000000"
         android:textSize="20sp" />
 
@@ -37,33 +37,53 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:text="Boxer 1"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-medium"
+                android:text="Mayweather"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:background="#ffffff"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/boxer_1_score"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="16dp"
-                android:background="#8a45ad"
-                android:textColor="#ffffff"
-                android:text="0"
-                android:textAllCaps="true"
-                android:textSize="56sp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+
+
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/floyd" />
+
+                <TextView
+                    android:id="@+id/boxer_1_score"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#8a45ad"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="56sp" />
+
+            </RelativeLayout>
 
             <Button
                 android:layout_width="match_parent"
@@ -120,30 +140,48 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:text="Boxer 2"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-medium"
+                android:text="McGregor"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:background="#ffffff"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/boxer_2_score"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="16dp"
-                android:background="#8a45ad"
-                android:textColor="#ffffff"
-                android:text="0"
-                android:textAllCaps="true"
-                android:textSize="56sp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="90dp"
+
+                    android:src="@drawable/conor" />
+
+
+                <TextView
+                    android:id="@+id/boxer_2_score"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="90dp"
+                    android:background="#8a45ad"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="56sp" />
+
+            </RelativeLayout>
 
             <Button
                 android:layout_width="match_parent"
@@ -187,17 +225,16 @@
         </LinearLayout>
 
 
-
     </LinearLayout>
 
     <Button
         android:layout_width="157dp"
         android:layout_height="48dp"
+        android:layout_below="@+id/layout_boxers"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:onClick="equalPoints"
-        android:layout_below="@+id/layout_boxers"
-        android:layout_centerHorizontal="true"
         android:paddingTop="8dp"
         android:text="Draw"
         android:textColor="#000000" />
@@ -207,14 +244,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/layout_declare"
+        android:background="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:text="Declare"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:background="#ffffff"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/layout_declare"
@@ -228,9 +265,9 @@
             android:id="@+id/button_match_draw"
             android:layout_width="157dp"
             android:layout_height="48dp"
-            android:layout_weight="1"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="8dp"
+            android:layout_weight="1"
             android:onClick="matchDraw"
             android:text="Match Draw"
             android:textColor="#000000" />
@@ -239,9 +276,9 @@
             android:id="@+id/button_no_context"
             android:layout_width="157dp"
             android:layout_height="48dp"
-            android:layout_weight="1"
-            android:layout_marginRight="24dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
             android:onClick="noContest"
             android:text="No Contest"
             android:textColor="#000000" />
@@ -263,12 +300,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:background="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:paddingTop="16dp"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#616161"
-        android:background="#ffffff"
         android:textSize="14sp" />
 
 </RelativeLayout>
